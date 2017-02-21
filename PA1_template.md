@@ -74,13 +74,14 @@ plot(steps ~ interval, data = steps_vs_int, type = "l", xlab = "time (min)", yla
 The 5-minute interval when the the maximum number of steps is taken is the number:
 
 ```r
-which.max(steps_vs_int$steps)
+iMax <- which.max(steps_vs_int$steps)
+iMax
 ```
 
 ```
 ## [1] 104
 ```
-which correspond to the minute 835.
+which correspond to the minute 8:35.
 
 ## Imputing missing values
 The number of missing values (NA) in the dataset is:
